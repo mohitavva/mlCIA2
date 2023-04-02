@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href={{url_for('static',filename='style.css')}} type="text/css"/>
+    <!--<link rel="stylesheet" href="style.css">-->
+    <title>Movie Recommender</title>
+
+</head>
+
+
+<body>
+
+    <h1>Movie Recommendation System</h1>
+
+
+    <h2>{{auth}}</h2>
+
+    <form action="/login" method="post">
+        <label for="username">Your username</label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+        <br><br>
+        <!-- Password -->
+        <label for="pswrd">Your password</label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+        <br>
+        <!-- Submit button -->
+        <input type="submit" name="submit" value="Login">
+    </form>
+</body>
+
+
+
+</html>

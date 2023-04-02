@@ -1,0 +1,58 @@
+body{
+    background-color: #fff;
+    margin: auto;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    margin-bottom: 50px;
+
+}
+
+form{
+    background-color: #d9dddc;
+    padding: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 5px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+input[type=submit]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 7px;
+    background-color: #ff8153;
+}
+
+input[type=submit]:hover {
+    background-color: #a84724;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 7px;
+}
+
+ul {
+    overflow: hidden;
+    list-style-type:decimal;
+    text-align: left;
+}
+  
+.recommendation {
+    text-align: left;
+    font-size: large;
+    margin-left: 15px;
+}
+

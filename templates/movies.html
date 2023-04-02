@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href={{url_for('static',filename='style.css')}} type="text/css"/>
+    <!--<link rel="stylesheet" href="style.css">-->
+    <title>Movie Recommender</title>
+
+</head>
+
+
+<body>
+
+    <h1>Movie Recommendation System</h1>
+
+    <form action="/movies" method="post">
+        <label for="movie">Movie Name</label> 
+        <input type="text" placeholder="Enter Movie" name="movie" required>
+        <br><br>
+        
+        <!-- Submit button -->
+        <input type="submit" name="submit" value="Recommend">
+    </form>
+
+    <h5>Select a Movie from the list to get recommendations. Use Ctrl+F to quickly find the movie you are looking for</h5>
+    <ul>
+        {% for item in movies_list %}
+          <li>{{item}}</li>
+          {% endfor %}
+    </ul>
+
+</body>
+
+
+
+</html>
